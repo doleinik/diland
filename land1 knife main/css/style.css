@@ -260,6 +260,7 @@ html{
  margin: 0 auto;
  max-width: 300px;
  width: 100%;
+ margin-bottom: 15px;
 }
 
 .advantages__img {
@@ -811,9 +812,8 @@ html{
  .advantages__info-text p {
   text-align: center;
   color: #000;
+  max-width: 100%;
  }
-
- 
 
  .problems__wrap h3 {
   font-size: 19px;
@@ -928,7 +928,7 @@ html{
 
  .main__sale {
   left: 140px;
-  top: 140px;
+  top: 160px;
  }
 
 .main__order {
@@ -937,12 +937,13 @@ html{
  }
 
  .main__plus {
-   margin-bottom: 340px;
+   margin-bottom: 315px;
  }
 
  h2.title {
-  font-size: 27px !important;
+  font-size: 25px !important;
   line-height: 30px;
+  margin-bottom: 25px;
  }
 
 .advantages__list {
@@ -976,13 +977,15 @@ html{
    padding: 0;
    margin: 0;
  }
+
  .advantages__info-text p {
    padding-top: 5px;
    font-size: 19px;
+   max-width: 100%;
  }
 
 .advantages__info-title {
-  font-size: 25px;
+  font-size: 21px;
   margin-bottom: 5px;
 }
 
@@ -1061,6 +1064,11 @@ html{
 .reviews__text {
   max-width: 100%;
   text-align: left;
+  font-size: 15px;
+ }
+ 
+ .reviews__text p {
+  word-wrap: break-word;
  }
 
  .order_steps .item {
@@ -1308,7 +1316,7 @@ html{
  }
  
  h2.title {
-  font-size: 42px;
+  font-size: 35px;
   line-height: 42px;
   margin: 0 0 40px 0;
   text-align: center;
@@ -1438,11 +1446,20 @@ html{
   .wrap {
    width: 640px;
   }
+
+  .universal__title span {
+    font-size: 25px !important;
+  }
  
  }
  
  @media screen and (max-width: 639px) {
- 
+
+  
+  .main__item { 
+    font-size: 15px;
+  }
+
   .wrap {
    width: 320px;
   }

@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин свитеров</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+
+<body>
+    <script>
+        let editOldPrise = "1050грн"// Изменить старую цену
+        let editnewPrise = "450грн"// Изменить новую цену
+    </script>
+
+    <main>
+        <section class="main">
+            <div class="container">
+                <div class="main__container">
+                    <div class="main__discount">
+                        СКИДКИ<br><span>-53%</span>
+                    </div>
+
+                    <img class="main__logo" src="img/logo.png" alt="logo">
+
+                    <h3 class="main__subtitle">Тотальная распродажа!</h3>
+
+                    <h1 class="main__title">Свитера для всей семьи от 690 грн</h1>
+
+                    <div class="main__features">
+                        <div class="main__features-item">Качественый пошив</div>
+
+                        <div class="main__features-item">Быстрая доставка</div>
+
+                        <div class="main__features-item">Все размеры в наличии</div>
+                    </div>
+
+                    <a class="main__button button" href="#catalog">СМОТРЕТЬ КАТАЛОГ</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sentence">
+            <div class="container">
+                <div class="sentence__container">
+                    <div class="sentence__item">
+                        <div class="sentence__item-img">
+                            <img src="img/sentens1.png" alt="sentece">
+                        </div>
+                        <div class="sentence__item-text">
+                            Сделано в Европе
+                        </div>
+                    </div>
+
+                    <div class="sentence__item">
+                        <div class="sentence__item-img">
+                            <img src="img/sentens2.png" alt="sentece">
+                        </div>
+                        <div class="sentence__item-text">
+                            Материал:68% шерсти, 32% кашемир и лайкра
+                        </div>
+                    </div>
+
+                    <div class="sentence__item">
+                        <div class="sentence__item-img">
+                            <img src="img/sentens3.png" alt="sentece">
+                        </div>
+                        <div class="sentence__item-text">
+                            Надежная защита от холода
+                        </div>
+                    </div>
+
+                    <div class="sentence__item">
+                        <div class="sentence__item-img">
+                            <img src="img/sentens4.png" alt="sentece">
+                        </div>
+                        <div class="sentence__item-text">
+                            Обмен / возврат 14 дней
+                        </div>
+                    </div>
+
+                    <div class="sentence__item">
+                        <div class="sentence__item-img">
+                            <img src="img/sentens5.png" alt="sentece">
+                        </div>
+                        <div class="sentence__item-text">
+                            Доставка без предоплаты
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__container">
+                    <h2 class="catalog__title title">КАТАЛОГ</h2>
+
+                    <div class="catalog__navigation">
+                        <a class="catalog__button catalog__button--women" href="#catalog__women">
+                            Женские свитеры
+                        </a>
+
+                        <a class="catalog__button catalog__button--men" href="#catalog__men">
+                            Мужские свитеры
+                        </a>
+
+                        <a class="catalog__button catalog__button--child" href="#catalog__child">
+                            Детские и подростковые
+                        </a>
+                    </div>
+
+                    <div class="catalog__women" id="catalog__women">
+                        <h3 class="catalog__list-title">Женские свитеры</h3>
+
+                        <div class="catalog__list">
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+                                            0 грн
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+                                            0 грн
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog__men" id="catalog__men">
+                        <h3 class="catalog__list-title">Мужские свитеры</h3>
+
+                        <div class="catalog__list">
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+                                            0 грн
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+                                            0 грн
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog__сhild" id="catalog__сhild">
+                        <h3 class="catalog__list-title">Детские и подростковые</h3>
+
+                        <div class="catalog__list">
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+                                            0 грн
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+                                            0 грн
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="catalog__item">
+                                <div class="catalog__item-img">
+                                    <img src="img/m10.jpg" alt="">
+                                </div>
+
+                                <div class="catalog__item-info">
+                                    <h4 class="catalog__item-title">Свитер с волками</h4>
+
+                                    <p class="catalog__item-article">[APT 130-85]</p>
+
+                                    <div class="catalog__item-price">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="product-button-js button">
+                                        ЗАКАЗАТЬ
+                                    </div>
+                                </div>
+
+                                <div class="catalog__order">
+                                    <div class="close">
+                                        &#10006;
+                                    </div>
+                                    <div class="catalog__order-title">Оставьте заявку</div>
+                                    <div class="catalog__order-text">Мы перезвоним вам и поможем правильно подобрать
+                                        размер</div>
+                                    <div class="catalog__order-prise">
+                                        <div class="catalog__prise-old">
+
+                                        </div>
+
+                                        <div class="catalog__prise-new">
+
+                                        </div>
+                                    </div>
+                                    <form class="catalog__form" action="zakaz2.php" method="POST">
+                                        <input class="catalog__product-name" type="text" name="product"
+                                            value="Свитер с волками" readonly>
+
+                                        <input class="catalog__product-article" type="text" name="article"
+                                            value="[APT 130-85]" readonly>
+
+                                        <input class="catalog__input" type="text" name="name"
+                                            placeholder="Введите ваше имя" required>
+
+                                        <input class="catalog__input" type="text" name="phone"
+                                            placeholder="Введите ваше телефон" required>
+
+                                        <button class="catalog__product-button button">ЗАКАЗАТЬ</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="size">
+            <div class="container">
+                <div class="size__container">
+                    <h3 class="size__title title">
+                        ТАБЛИЦА РАЗМЕРОВ
+                    </h3>
+
+                    <h4 class="size__subtitle">
+                        ВЗРОСЛИЕ РАЗМЕРЫ
+                    </h4>
+
+                    <ul class="size__info">
+                        <li class="size__info-first">
+                            <ul class="size__list">
+                                <li class="size__item size__item--title">Размер</li>
+                                <li class="size__item">40-42(XS)</li>
+                                <li class="size__item">42-44(S)</li>
+                                <li class="size__item">46(M)</li>
+                                <li class="size__item">48(L)</li>
+                                <li class="size__item">48+(M*)</li>
+                                <li class="size__item">50-52(L*)</li>
+                                <li class="size__item">54(XL)</li>
+                                <li class="size__item">56(2XL)</li>
+                                <li class="size__item">58(3XL)</li>
+                                <li class="size__item">60(4XL)</li>
+                            </ul>
+                        </li>
+
+                        <li class="size__info-second">
+                            <ul class="size__list">
+                                <li class="size__item size__item--title">Спина, длина (см)</li>
+                                <li class="size__item">60</li>
+                                <li class="size__item">60</li>
+                                <li class="size__item">62,5</li>
+                                <li class="size__item">66</li>
+                                <li class="size__item">66</li>
+                                <li class="size__item">68</li>
+                                <li class="size__item">68,6</li>
+                                <li class="size__item">69</li>
+                                <li class="size__item">72</li>
+                                <li class="size__item">77,5</li>
+                            </ul>
+                        </li>
+
+                        <li class="size__info-third">
+                            <ul class="size__list">
+                                <li class="size__item size__item--title">Охват груди (см)</li>
+                                <li class="size__item">90</li>
+                                <li class="size__item">92</li>
+                                <li class="size__item">97</li>
+                                <li class="size__item">102</li>
+                                <li class="size__item">104</li>
+                                <li class="size__item">106</li>
+                                <li class="size__item">109</li>
+                                <li class="size__item">110</li>
+                                <li class="size__item">115</li>
+                                <li class="size__item">122</li>
+                            </ul>
+                        </li>
+
+                        <li class="size__info-fours">
+                            <ul class="size__list">
+                                <li class="size__item size__item--title">Рукава (см) от подмышки до рукава</li>
+                                <li class="size__item">49</li>
+                                <li class="size__item">49</li>
+                                <li class="size__item">49</li>
+                                <li class="size__item">49</li>
+                                <li class="size__item">52,5</li>
+                                <li class="size__item">53,5</li>
+                                <li class="size__item">55</li>
+                                <li class="size__item">56</li>
+                                <li class="size__item">56</li>
+                                <li class="size__item">56</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h4 class="size__subtitle">
+                        Детские и подростковые
+                    </h4>
+
+                    <ul class="size__info">
+                        <li class="size__info-first">
+                            <ul class="size__list">
+                                <li class="size__item size__item--title">Размер</li>
+                                <li class="size__item">28/30 (3-4 года)</li>
+                                <li class="size__item">32 (5-6 лет)</li>
+                                <li class="size__item">34 (7-8 лет)</li>
+                                <li class="size__item">36 (9-10 лет)</li>
+                                <li class="size__item">38 (11-12 лет)</li>
+                                <li class="size__item">40 (13-14 лет)</li>
+                            </ul>
+                        </li>
+
+                        <li class="size__info-second">
+                            <ul class="size__list">
+                                <li class="size__item size__item size__item--title">Спина, длина (см)</li>
+                                <li class="size__item">40</li>
+                                <li class="size__item">42,5</li>
+                                <li class="size__item">45</li>
+                                <li class="size__item">53</li>
+                                <li class="size__item">52</li>
+                                <li class="size__item">57</li>
+                            </ul>
+                        </li>
+
+                        <li class="size__info-third">
+                            <ul class="size__list">
+                                <li class="size__item size__item size__item--title">Охват груди (см)</li>
+                                <li class="size__item">66</li>
+                                <li class="size__item">70</li>
+                                <li class="size__item">72</li>
+                                <li class="size__item">72</li>
+                                <li class="size__item">78</li>
+                                <li class="size__item">86</li>
+                            </ul>
+                        </li>
+
+                        <li class="size__info-fours">
+                            <ul class="size__list">
+                                <li class="size__item size__item--title">Рукава (см) от подмышки до рукава</li>
+                                <li class="size__item">26</li>
+                                <li class="size__item">31</li>
+                                <li class="size__item">34,5</li>
+                                <li class="size__item">38</li>
+                                <li class="size__item">43</li>
+                                <li class="size__item">46,5</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery">
+            <div class="container">
+                <div class="delivery__container">
+                    <div class="delivery__info">
+                        <h2 class="delivery__title ">
+                            ДОСТАВКА И ГАРАНТИЯ
+                        </h2>
+
+                        <div class="delivery__list">
+                            <div class="delivery__item">
+                                <div class="delivery__item-img delivery__item-img--first">
+
+                                </div>
+
+                                <div class="delivery__item-text">
+                                    Доставка почтой в течение 3‑10 рабочих дней. Стоимость доставки товара от 200
+                                    грн
+                                </div>
+                            </div>
+
+                            <div class="delivery__item">
+                                <div class="delivery__item-img delivery__item-img--second">
+
+                                </div>
+
+                                <div class="delivery__item-text">
+                                    Оплата заказов осуществляется по факту получения товара
+                                </div>
+                            </div>
+
+                            <div class="delivery__item">
+                                <div class="delivery__item-img delivery__item-img--third">
+
+                                </div>
+
+                                <div class="delivery__item-text">
+                                    Все свитера проходят обязательную проверку качества перед отправкой
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review">
+            <div class="review__slider">
+                <div class="review__slide">
+                    <img class="review__img" src="img/review1.jpg" alt="review">
+                </div>
+
+                <div class="review__slide">
+                    <img class="review__img" src="img/review2.jpg" alt="review">
+                </div>
+
+                <div class="review__slide">
+                    <img class="review__img" src="img/review3.jpg" alt="review">
+                </div>
+
+                <div class="review__slide">
+                    <img class="review__img" src="img/review4.jpg" alt="review">
+                </div>
+
+                <div class="review__slide">
+                    <img class="review__img" src="img/review5.jpg" alt="review">
+                </div>
+
+                <div class="review__slide">
+                    <img class="review__img" src="img/review6.jpg" alt="review">
+                </div>
+
+                <div class="review__slide">
+                    <img class="review__img" src="img/review7.jpg" alt="review">
+                </div>
+            </div>
+            <div class="container">
+                <h3 class="review__title title">НАМ ВАЖЕН КАЖДИЙ КЛИЕНТ</h3>
+            </div>
+
+        </section>
+
+        <section class="order">
+            <div class="container">
+                <div class="order__container">
+                    <div class="order__discount">
+                        СКИДКИ<span>-53%</span>
+                    </div>
+
+                    <img class="order__logo" src="img/logo.png" alt="logo">
+
+                    <h3 class="order__title">Сомневаетесь с выбором?</h3>
+
+                    <h4 class="order__subtitle">Оставьте заявку сейчас и наш консультант поможет вам с выбором
+                        свитера
+                    </h4>
+
+                    <div class="order__header">
+                        Ми перезвоним в течение 15 минут
+                    </div>
+
+                    <form class="order__form" action="zakaz.php" method="POST">
+                        <input class="order__input" type="text" name="" id="" placeholder="Введите ваше имя">
+                        <input class="order__input" type="text" name="" id="" placeholder="Введите ваше телефон">
+
+                        <button class="order__button button">ЗАКАЗАТЬ СО СКИДКОЙ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

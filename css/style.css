@@ -5782,3 +5782,18 @@ input {
 .servant__nalue {
 	background-color: #000;
 }
+
+.land__prise {
+	color: #a400ff;
+	font-size: 30px;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 600;
+	margin-top: 20px;
+}
+.ind-task {
+	color: #a400ff;
+	font-size: 17px;
+	font-family: 'Courier New', Courier, monospace;
+	margin-top: 15px;
+	font-weight: 600;
+}

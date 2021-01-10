@@ -1441,8 +1441,11 @@ $(function () {
 });
 $(function () {
     $(".phone").mask("+380 (99) 99 99 999");
+    $(".phone1").mask("+380 (99) 99 99 999");
+    $(".phone2").mask("+380 (99) 99 99 999");
+    $(".phone3").mask("+380 (99) 99 99 999");
+    $(".phone4").mask("+380 (99) 99 99 999");
+    $(".phone5").mask("+380 (99) 99 99 999");
 });
 
-document.getElementById('form187115731').reset();
-document.getElementById('form3').reset();
-document.getElementById('form186383760').reset();
+document.getElementById('reset').reset();

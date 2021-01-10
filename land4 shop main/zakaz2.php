@@ -1,8 +1,8 @@
 <?php 
   $name = stripslashes(htmlspecialchars($_POST['name']));
   $phone = stripslashes(htmlspecialchars($_POST['phone']));
-  $email = stripslashes(htmlspecialchars($_POST['email']));
-  $servant = stripslashes(htmlspecialchars($_POST['servant']));
+  $product = stripslashes(htmlspecialchars($_POST['product']));
+  $article = stripslashes(htmlspecialchars($_POST['article']));
 
   if(empty($name) || empty($phone)) {
     echo '<h1 style="color:red;">Пожалуйста заполните все поля</h1>';
@@ -13,8 +13,8 @@
     $subject = 'Заказ услуги'; // заголовок письмя
     $addressat = "doleinika@gmail.com"; // Ваш Электронный адрес
     $emails = "dima.oleinik.utd@gmail.com";
-    $success_url = './form-ok.php?name='.$_POST['name'].'&phone='.$_POST['phone'].'&email='.$_POST['email'].'&task='.$_POST['servant'].'';
-    $message = "ФИО: {$name}\nКонтактный телефон: {$phone}\nПочта: {$email}\nЗаказ: {$servant}";
+    $success_url = './form-ok.php?name='.$_POST['name'].'&phone='.$_POST['phone'].'&product='.$_POST['product'].'&article='.$_POST['article'].'';
+    $message = "ФИО: {$name}\nКонтактный телефон: {$phone}\nНазвание продукта: {$product}\nАртикул: {$article}";
     $headers = 'From: ' .$emails . "\r\n" . 'Reply-To: ' . $emails. "\r\n" . 'X-Mailer: PHP/' . phpversion();
 
     $verify = mail($addressat, $subject, $message, $headers);

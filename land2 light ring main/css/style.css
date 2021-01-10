@@ -6,6 +6,20 @@
     margin-right: 0;
 }
 
+.back {
+    font-size: 15px;
+    padding: 5px 15px;
+    background-image: linear-gradient(50deg, #a400ff 60%, #9d0089);
+    box-shadow: 0 6px 32px 0 rgba(164, 0, 255, 0.35);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    border-radius: 35px;
+    z-index: 111;
+    text-decoration: none;
+  }
+
 img {
     max-width: 100%;
 }
